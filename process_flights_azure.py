@@ -18,10 +18,8 @@ import os
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, avg, count, month, when, round
 
-# ── Config: change these two to match your Azure resources ──────────
-STORAGE_ACCOUNT = "flightdelaymax"        # <-- your storage account name
-CONTAINER = "flight-delay-data"           # <-- your ADLS Gen2 container name
-# ──────────────────────────────────────────────────────────────────
+STORAGE_ACCOUNT = "flightdelaymax"
+CONTAINER = "flight-delay-data"
 
 spark = SparkSession.builder.appName("FlightDelayPipeline").getOrCreate()
 

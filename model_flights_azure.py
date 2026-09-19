@@ -13,8 +13,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, avg, count, when, month, dayofweek, log, lit
 from pyspark.sql.functions import round as spark_round
 
-STORAGE_ACCOUNT = "flightdelaymax"        # <-- your storage account name
-CONTAINER = "flight-delay-data"           # <-- your ADLS Gen2 container name
+STORAGE_ACCOUNT = "flightdelaymax"
+CONTAINER = "flight-delay-data"
 
 spark = (
     SparkSession.builder.appName("FlightDelayPrediction")

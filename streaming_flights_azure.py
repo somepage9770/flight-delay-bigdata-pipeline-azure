@@ -10,8 +10,8 @@ import os
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import avg, count, month, round
 
-STORAGE_ACCOUNT = "flightdelaymax"        # <-- your storage account name
-CONTAINER = "flight-delay-data"           # <-- your ADLS Gen2 container name
+STORAGE_ACCOUNT = "flightdelaymax"
+CONTAINER = "flight-delay-data"
 
 spark = SparkSession.builder.appName("FlightStreamingSimulation").getOrCreate()
 
